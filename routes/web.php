@@ -15,5 +15,6 @@ Route::get('/admin', function () {
 use App\Http\Controllers\AdminController;
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
+Route::get('/admin/categorie/ajouter', [CategorieController::class, 'ajouter'])->name('admin.articles.ajouter');
 
 
